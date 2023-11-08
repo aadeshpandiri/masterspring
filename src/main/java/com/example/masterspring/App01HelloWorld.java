@@ -12,5 +12,10 @@ public class App01HelloWorld {
         System.out.println("Age : "+context.getBean("age"));
         System.out.println("Person : "+context.getBean("person"));
         System.out.println("Address : "+context.getBean("address"));
+        System.out.println(context.getBean("person2MethodCall"));
+        System.out.println(context.getBean("person3Parameters"));
+        System.out.println(context.getBean("address2"));
+        //will cause error as more than one Address Bean
+        //System.out.println(context.getBean(Address.class));
     }
 }
