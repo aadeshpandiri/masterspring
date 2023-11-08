@@ -1,8 +1,5 @@
-package com.example.masterspring;
+package com.example.masterspring.game;
 
-import com.example.masterspring.game.ContraGame;
-import com.example.masterspring.game.GamingConsole;
-import com.example.masterspring.game.MarioGame;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration

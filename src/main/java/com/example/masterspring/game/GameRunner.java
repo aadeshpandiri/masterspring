@@ -1,4 +1,4 @@
-package com.example.masterspring;
+package com.example.masterspring.game;
 
 import com.example.masterspring.game.ContraGame ;
 import com.example.masterspring.game.GamingConsole;
