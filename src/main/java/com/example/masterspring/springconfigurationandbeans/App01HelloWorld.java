@@ -1,8 +1,9 @@
-package com.example.masterspring;
+package com.example.masterspring.springconfigurationandbeans;
 
+import com.example.masterspring.springconfigurationandbeans.Address;
+import com.example.masterspring.springconfigurationandbeans.HelloWorldConfiguration;
+import com.example.masterspring.springconfigurationandbeans.Person;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.lang.annotation.Annotation;
 
 public class App01HelloWorld {
     public static void main(String[] args){

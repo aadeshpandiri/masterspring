@@ -1,4 +1,4 @@
-package com.example.masterspring;
+package com.example.masterspring.springconfigurationandbeans;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
