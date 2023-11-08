@@ -1,13 +1,15 @@
 package com.example.masterspring.springmanagebeans;
 
-import com.example.masterspring.game.ContraGame;
-import com.example.masterspring.game.GameRunner;
-import com.example.masterspring.game.GamingConsole;
-import com.example.masterspring.game.MarioGame;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+
+
+//add componentscan annotation for configuration file and add component for bean java classes
 @Configuration
+@ComponentScan("com.example.masterspring.springmanagebeans")
 public class GamingConfiguration {
 
     //OLD WAY - we created objects and manage objects
@@ -17,7 +19,8 @@ public class GamingConfiguration {
 
     //NEW WAY - Spring will manage beans
     @Bean
-    public GamingConsole gameconsole(){
+    @Primary
+    public GamingConsole gamingConsole(){
         return new MarioGame();
     }
 

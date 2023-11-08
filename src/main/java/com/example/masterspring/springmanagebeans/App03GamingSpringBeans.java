@@ -1,7 +1,7 @@
 package com.example.masterspring.springmanagebeans;
 
-import com.example.masterspring.game.GameRunner;
-import com.example.masterspring.game.GamingConsole;
+import com.example.masterspring.springmanagebeans.GameRunner;
+import com.example.masterspring.springmanagebeans.GamingConsole;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App03GamingSpringBeans {
