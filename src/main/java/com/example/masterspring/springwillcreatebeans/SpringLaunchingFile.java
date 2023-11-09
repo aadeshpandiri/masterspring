@@ -3,20 +3,8 @@ package com.example.masterspring.springwillcreatebeans;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@ComponentScan
+@ComponentScan("com.example.masterspring.springwillcreatebeans")
 public class SpringLaunchingFile {
-
-    @Bean
-    @Primary
-    public GamingConsole gamingConsole(){
-        return new MarioGame();
-    }
-
-    @Bean
-    public GameRunner gameRunner(GamingConsole gamingConsole){
-        return new GameRunner(gamingConsole);
-    }
-
     public static void main(String[] args){
         //wrap it under try catch block , will use new try here
         try(var context = new AnnotationConfigApplicationContext(SpringLaunchingFile.class)){
