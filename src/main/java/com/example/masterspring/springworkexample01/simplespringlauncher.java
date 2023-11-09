@@ -17,19 +17,26 @@ class BusinessClass{
     Dependency2 dependency2;
 
     //Type 2 : Autowiring using setter
+//    @Autowired
+//	public void setDependency1(Dependency1 dependency1) {
+//		System.out.println("Setter Injection - setDependency1 ");
+//		this.dependency1 = dependency1;
+//	}
+//
+//	@Autowired
+//	public void setDependency2(Dependency2 dependency2) {
+//		System.out.println("Setter Injection - setDependency2 ");
+//		this.dependency2 = dependency2;
+//	}
+
+    //Type 3 : Autowiring using constructor ,  Autowired Annotation is optional
+    //Recommended
     @Autowired
-	public void setDependency1(Dependency1 dependency1) {
-		System.out.println("Setter Injection - setDependency1 ");
-		this.dependency1 = dependency1;
-	}
-
-	@Autowired
-	public void setDependency2(Dependency2 dependency2) {
-		System.out.println("Setter Injection - setDependency2 ");
-		this.dependency2 = dependency2;
-	}
-
-
+    public BusinessClass(Dependency1 dependency1, Dependency2 dependency2){
+        super();
+        this.dependency1=dependency1;
+        this.dependency2=dependency2;
+    }
 
 
     public String toString() {
