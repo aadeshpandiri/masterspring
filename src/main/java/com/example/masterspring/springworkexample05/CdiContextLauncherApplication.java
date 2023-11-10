@@ -1,4 +1,4 @@
-package com.example.masterspring.springworkexample04;
+package com.example.masterspring.springworkexample05;
 
 import java.util.Arrays;
 
@@ -39,7 +39,7 @@ class DataService {
 
 @Configuration
 @ComponentScan
-class CdiContextLauncherApplication {
+public class CdiContextLauncherApplication {
 
     public static void main(String[] args) {
 
